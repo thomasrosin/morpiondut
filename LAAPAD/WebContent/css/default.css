@@ -1,0 +1,116 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	margin: 0;
+	background: url("../media/fond.png");
+	font-family: "Helvetica"
+}
+
+#content {
+	width: 82%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+}
+
+#header {
+	margin: 0;
+	padding: 5px 0 5px 0;
+}
+
+
+#header #entete #cart
+{
+	float:right;
+	
+}
+
+#header #entete #connection
+{
+	float:left;	
+}
+
+
+#header #title {
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+
+#header #title h1 {	
+	
+	margin: 0;
+}
+
+#header #nav {
+	float:left;	
+	width: 100%;	
+	border: 1px dashed #766F5E;
+	padding:0;
+    list-style: none;
+    margin:0;
+}
+
+#nav ul
+{
+	padding: 0;
+	margin:0;
+}
+#nav li{    
+        float: left;
+        position: relative;
+        border-right: 1px dashed #766F5E;
+        list-style: none;
+}
+
+#nav a{
+        float: left;
+        height: 25px;
+        padding: 0 20px 0 20px;
+        color: #999;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-shadow: 0 1px 0 #000;
+        vertical-align:center;
+        
+}
+
+#main_content{
+	clear:both;	
+	width: 100%;
+	padding: 10px;
+	margin-top:40px;
+	
+	}
+	
+#connection_form{
+	
+	width: 80%;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 10px;
+	
+}
+
+form h2{
+	text-align: center;
+}
+
+#footer
+{
+	clear:both;
+	float:left;
+	width:100%;
+	border-top: 1px dashed #766F5E;
+	margin-top: 30px;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.row img{
+	padding:1rem 0 1rem 0;
+}
+
+.row h2,h3
+{
+	text-align: center;
+}
