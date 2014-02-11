@@ -16,7 +16,7 @@
       </div>
     </div>
 	
-	<form method="post" action="">
+	<form method="post" action="AjoutProduit" enctype="multipart/form-data">
     <div class="row">
       <div class="large-12 columns">
       	<div class="panel">
