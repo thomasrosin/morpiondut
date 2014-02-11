@@ -39,5 +39,4 @@ public class ModeleActivity extends Activity {
 		finish();
 	}
 
-
 }
