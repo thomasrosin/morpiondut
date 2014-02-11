@@ -23,10 +23,7 @@
 
 
 <div id="content">
-
-	<div id="header">
-
-		
+	<div id="header">	
 
 
 		<div id="title">
