@@ -1,38 +1,28 @@
 package com.uvhc.laapad;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
-import java.net.URI;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.http.HttpResponse;
-import org.apache.http.HttpStatus;
 import org.apache.http.NameValuePair;
-import org.apache.http.StatusLine;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
 import org.apache.http.client.entity.UrlEncodedFormEntity;
-import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
-import org.apache.http.impl.client.BasicResponseHandler;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.params.HttpParams;
-import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.util.EntityUtils;
-
-import com.uvhc.apad.R;
-import com.uvhc.laapad.crouton.Crouton;
-import com.uvhc.laapad.crouton.Style;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
+
+import com.uvhc.apad.R;
+import com.uvhc.laapad.crouton.Crouton;
+import com.uvhc.laapad.crouton.Style;
 
 public class MainActivity extends Activity {
 
@@ -70,8 +60,7 @@ public class MainActivity extends Activity {
 			HttpClient client = new DefaultHttpClient();
 			HttpPost post = new HttpPost(uri[0]);
 			List<NameValuePair> pairs = new ArrayList<NameValuePair>();
-			pairs.add(new BasicNameValuePair("key1", "value1"));
-			pairs.add(new BasicNameValuePair("key2", "value2"));
+			pairs.add(new BasicNameValuePair("nom", "Rocco"));
 
 			HttpResponse response;
 			String responseStr = null;
