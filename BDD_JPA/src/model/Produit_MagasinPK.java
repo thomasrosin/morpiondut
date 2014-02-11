@@ -18,9 +18,7 @@ public class Produit_MagasinPK implements Serializable {
 	@Column(insertable=false, updatable=false)
 	private int p_idProduit;
 
-	@Column(insertable=false, updatable=false)
-	private int s_idSecteur;
-
+	
 	public Produit_MagasinPK() {
 	}
 	public int getM_idMagasin() {
@@ -35,13 +33,7 @@ public class Produit_MagasinPK implements Serializable {
 	public void setP_idProduit(int p_idProduit) {
 		this.p_idProduit = p_idProduit;
 	}
-	public int getS_idSecteur() {
-		return this.s_idSecteur;
-	}
-	public void setS_idSecteur(int s_idSecteur) {
-		this.s_idSecteur = s_idSecteur;
-	}
-
+	
 	public boolean equals(Object other) {
 		if (this == other) {
 			return true;
@@ -52,8 +44,7 @@ public class Produit_MagasinPK implements Serializable {
 		Produit_MagasinPK castOther = (Produit_MagasinPK)other;
 		return 
 			(this.m_idMagasin == castOther.m_idMagasin)
-			&& (this.p_idProduit == castOther.p_idProduit)
-			&& (this.s_idSecteur == castOther.s_idSecteur);
+			&& (this.p_idProduit == castOther.p_idProduit);
 	}
 
 	public int hashCode() {
@@ -61,7 +52,7 @@ public class Produit_MagasinPK implements Serializable {
 		int hash = 17;
 		hash = hash * prime + this.m_idMagasin;
 		hash = hash * prime + this.p_idProduit;
-		hash = hash * prime + this.s_idSecteur;
+		
 		
 		return hash;
 	}

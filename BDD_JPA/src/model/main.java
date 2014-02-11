@@ -40,11 +40,12 @@ public class main {
 		s.getTransaction().commit();
 		TypedQuery<Secteur> tqs = (TypedQuery<Secteur>) s.createNativeQuery("Select * from secteur where s_idSecteur=1", Secteur.class);
 		sec =tqs.getSingleResult();
+		System.out.println(sec.getSNom());
 		Produit_Magasin pm = new Produit_Magasin();
 		Produit_MagasinPK pmPK = new Produit_MagasinPK();
 		pmPK.setM_idMagasin(m.getM_idMagasin());
 		pmPK.setP_idProduit(p.getP_idProduit());
-		pmPK.setS_idSecteur(sec.getS_idSecteur());
+		
 		pm.setId(pmPK);
 		pm.setMagasin(m);
 		pm.setProduit(p);

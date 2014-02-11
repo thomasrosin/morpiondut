@@ -23,9 +23,8 @@ public class Horaire implements Serializable {
 
 	private Time h_horaireFin;
 
-	@Temporal(TemporalType.DATE)
 	@Column(name="h_jour")
-	private Date hJour;
+	private String hJour;
 
 	//bi-directional many-to-one association to Magasin
 	@ManyToOne()
@@ -59,11 +58,11 @@ public class Horaire implements Serializable {
 		this.h_horaireFin = h_horaireFin;
 	}
 
-	public Date getHJour() {
+	public String getHJour() {
 		return this.hJour;
 	}
 
-	public void setHJour(Date hJour) {
+	public void setHJour(String hJour) {
 		this.hJour = hJour;
 	}
 
