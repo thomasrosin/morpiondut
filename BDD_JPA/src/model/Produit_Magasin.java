@@ -31,7 +31,7 @@ public class Produit_Magasin implements Serializable {
 
 	//bi-directional many-to-one association to Secteur
 	@ManyToOne
-	@JoinColumn(name="s_idSecteur", insertable = false, updatable = false)
+	@JoinColumn(name="s_idSecteur")
 	private Secteur secteur;
 
 	public Produit_Magasin() {
