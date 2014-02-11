@@ -32,6 +32,10 @@ public class Magasin implements Serializable {
 
 	@Column(name="m_nom")
 	private String mNom;
+	
+	@Column(name="m_logo")
+    @Lob
+    private byte[] mLogo;
 
 	//bi-directional many-to-one association to Horaire
 	@OneToMany(mappedBy="magasin")
@@ -126,6 +130,14 @@ public class Magasin implements Serializable {
 		produitMagasin.setMagasin(null);
 
 		return produitMagasin;
+	}
+
+	public byte[] getmLogo() {
+		return mLogo;
+	}
+
+	public void setmLogo(byte[] mLogo) {
+		this.mLogo = mLogo;
 	}
 
 }
